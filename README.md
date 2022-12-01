@@ -7,41 +7,41 @@
 
 1. [Project Description](#project-description)
 2. [This project includes the following things](#this-project-includes-the-following-things)
-3. [Architecture followed](#architecture-followed)
-4. [Project Related Terminologies](#project-related-terminologies)
-5. [Install](#install)
-6. [Swagger URL](#swagger-url)
-7. [Project Status](#project-status)
-8. [Road-map](#road-map)
-9. [Contributors](#contributors)
-10. [Contact Details](#contact-details)
+3. [Install](#install)
+4. [Dataset](#dataset)
+5. [Code Editor](#code-editor)
+6. [Contributors](#contributors)
+7. [Contact Details](#contact-details)
 
 ## Project Description
 
-This website is designed for selling products online. Users can register them selfs into the website, filter and search for different products category-wise, add products to the cart and order the item. 
+Social media sites are gaining popularity day by day. They are best for communication, business, entertainment, and many other things. After more than a decade, social media have become very influential. On the flip side, fake news, hate speech, and online trolls are the biggest concerns because of social media. So, a solution to curb this issue is needed, especially in regional languages. Many social media platforms support regional languages. This paper will provide a machine learning-based solution to this problem. The focus of this paper is to classify comments written in regional languages. Firstly, a dataset has been created in Gujarati, Hindi, English, Marathi, and Punjabi languages. After that, different machine learning and deep learning models are applied to the multilingual dataset. At last, a comparison of all model performances was made.
 
 ## This project includes the following things
-1. Spring Security Configured.
-2. MySQL Configured.
-3. Liquibase Configured.
-4. Ehcache Configured.
-5. Two different env Configured (Dev and Prod).
-6. Spring actuator Configured.
-7. Logging Configured (Through AOP).
-8. Pre-made User and Authority Class with CRUD Rest endpoints ready.
-9. Swagger Configured.
+1. Dataset
+2. .ipynb files for different models
+3. Technical Report
+4. Research Report
 
 ## Install
 
 To run on local follow the given steps:
 
-    1. git clone repo_link.
-    2. Import as Gradle project in IntelliJ.
-    3. Create a schema in the DB server with the name mentioned in 
-       the application-dev.yml file in the data source URL.
-    4. if Linux user run ./gradlew clean and then ./gradlew -Plocal.
-    5. if windows user run gradlew  clean and then gradlew -Plocal.
-    
+1. git clone repo_link.
+2. Upload the project folder (Data and Code files) to google drive
+3. Open ipynb file and change ‘dir_path’ variable to your local path
+4. Execute the code cells
+
+## Dataset
+
+I have gathered data from various social media platforms in Indic languages like Gujarati, Hindi, Marathi, Punjabi, and English. The shape of the data is (14995, 2). It has two columns comment_text and toxic. The comment_text column contains actual text, and the toxic column contains '1' for toxic and '0' for non-toxic comments. The pre-processing step removes URLs, hashtags, mentions, punctuations, and extra white spaces from the comments. Plus, removed rows with empty or null values. 
+  
+## Code Editor
+
+Google Colab
+
+Colaboratory, sometimes called Colab, is a Google Research product. Colab is particularly well suited to machine learning, data analysis, and education. It enables anyone to create and execute arbitrary Python code through the browser. Technically speaking, Colab is a hosted Jupyter notebook service that offers free access to computer resources, including GPUs, and requires no setup.
+  
 ## Contributors
 
 [Yash Parikh](https://github.com/yparikh8036)  ![twitter](https://img.shields.io/twitter/follow/parikh_y?style=social)
